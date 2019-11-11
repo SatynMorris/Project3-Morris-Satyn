@@ -5,6 +5,7 @@
   z-index: 1;
   top: 0;
   left: 0;
+  right: 0;
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
@@ -20,6 +21,8 @@
 
 .sidenav a:hover {
   color: #f1f1f1;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .main {
@@ -237,17 +240,6 @@ html, body {
   }
 }
 
-.at-twitter {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  color: #f1c40f;
-  z-index: 5000;
-  &:visited {
-    color: #f1c40f;
-  }
-}
-
 a {
   color: inherit;
   &:hover,
@@ -256,4 +248,67 @@ a {
     text-decoration: underline;
   }
   text-decoration: none;
+}
+
+/*body class styles*/
+
+.locationdiv {
+  float: right;
+}
+
+/*calender div*/
+table { width: 100%; box-sizing: border-box; box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1); float:right; /*border-collapse: collapse;*/ border-spacing: 0; background-color: #333333; }
+
+th, td { border: 1px solid rgba(255,255,255,0.1); box-sizing: border-box; }
+
+th { text-transform: uppercase; font-size:10px; font-weight:700; padding: 10px 0; color: rgba(255,255,255,0.5); background-color: #292929; letter-spacing: 1px; }
+
+td { width: 14.285%; transition: all 0.3s; font-size: 14px; color: rgba(255,255,255,0.6); font-weight: 400; font-size: 14px; padding: 1.5% 1.5% 5%; vertical-align: initial; padding: 1.5% 0 ; height: 75px; }
+
+.day:hover { background-color: rgba(0,0,0,0.1); cursor:pointer; }
+
+.today { color: #FFF; background-color: rgba(0,0,0,.25) !important; }
+
+span.number { margin-left: 10% }
+
+span.event { height: 4px; background-color: rgba(0,0,0,.3); display: block; margin: 5px 10%; border-radius: 2px; background-color: #91c33b; }
+
+span.event-multiday { margin: 5px -2px; border-radius: 0; }
+span.event-multiday-start { margin-right: -4px;  }
+span.event-multiday-finish { margin-left: -4px;  }
+
+span.event-ghost { background-color:transparent; }
+
+
+/*form div*/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.formdiv {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  float: right;
 }

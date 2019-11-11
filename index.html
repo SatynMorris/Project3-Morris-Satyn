@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Night Owl</title>
   </head>
   <body>
+
     <!--sidebar navigation-->
     <div class="sidenav">
     <a href="#story">OUR STORY</a>
@@ -13,6 +15,7 @@
     <a href="#subscriptions">SUBSCRIPTIONS</a>
     <a href="contact">CONTACT</a>
     </div>
+
     <!--animated hero image section-->
     <div class="container">
     <section>
@@ -31,21 +34,23 @@
   <div class="image" data-type="background" data-speed="7"></div>
   <div class="stuff" data-type="content"><div class="main"><h2>OUR STORY</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></div>
   </section>
+
     <!--Location section-->
   <section>
   <div class="image" data-type="background" data-speed="6"></div>
-  <div class="stuff" data-type="content"><h2>LOCATIONS</h2>
+  <div class="stuff" data-type="content"><div class="main"><h2>LOCATIONS</h2>
       <h3>Location 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <img src="" alt="">
-      <h3>Location 2 - COMING SOON!</h3>
+      <h3 class="locationdiv">Location 2 - COMING SOON!</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <img src="" alt=""></div>
     </section>
+
     <!--hours section-->
     <section>
   <div class="image" data-type="background" data-speed="5"></div>
-  <div class="stuff" data-type="content"><h2>HOURS</h2>
+  <div class="stuff" data-type="content"><div class="main"><h2>HOURS</h2>
       <ul>
         <li>Monday: CLOSED</li>
         <li>Tuesday: 2pm - 10pm</li>
@@ -56,22 +61,110 @@
         <li>Sunday: 2pm - 12pm</li>
       </ul>
       <img src="" alt="">
+  <table>
+  <tr>
+    <th class="day-name">Sun</th>
+    <th class="day-name">Mon</th>
+    <th class="day-name">Tue</th>
+    <th class="day-name">Wed</th>
+    <th class="day-name">Thu</th>
+    <th class="day-name">Fri</th>
+    <th class="day-name">Sat</th>
+  </tr>
+  <tr>
+    <td class="day"><span class="number">31</span></td>
+    <td class="day"><span class="number">1</span><span class="event"></span><span class="event"></span></td>
+    <td class="day"><span class="number">2</span></td>
+    <td class="day"><span class="number">3</span><span class="event event-multiday-start"></span></td>
+    <td class="day"><span class="number">4</span><span class="event event-multiday"></span><span class="event event-multiday-start eventclass" style="background-color:#5a9ab2;"></span><span class="event"></td>
+    <td class="day"><span class="number">5</span><span class="event event-multiday-finish"></span><span class="event event-multiday eventclass" style="background-color:#5a9ab2;"></span></td>
+    <td class="day"><span class="number">6</span><span class="event event-ghost"></span><span class="event event-multiday-finish eventclass" style="background-color:#5a9ab2;"></span></td>
+  </tr>
+  <tr>
+    <td class="day"><span class="number">7</span></td>
+    <td class="day"><span class="number">8</span><span class="event"></span></td>
+    <td class="day"><span class="number">9</span></td>
+    <td class="day"><span class="number">10</span></td>
+    <td class="day"><span class="number">11</span></td>
+    <td class="day"><span class="number">12</span></td>
+    <td class="day"><span class="number">13</span></td>
+  </tr>
+  <tr>
+    <td class="day"><span class="number">14</span></td>
+    <td class="day"><span class="number">15</span></td>
+    <td class="day"><span class="number">16</span><span class="event"></span></td>
+    <td class="day"><span class="number">17</span><span class="event"></span></td>
+    <td class="day"><span class="number">18</span></td>
+    <td class="day"><span class="number">19</span></td>
+    <td class="day"><span class="number">20</span></td>
+  </tr>
+  <tr>
+    <td class="day"><span class="number">21</span></td>
+    <td class="day"><span class="number">22</span></td>
+    <td class="day"><span class="number">23</span></td>
+    <td class="day"><span class="number">24</span></td>
+    <td class="day"><span class="number">25</span></td>
+    <td class="day"><span class="number">26</span></td>
+    <td class="day"><span class="number">27</span><span class="event event-multiday-start" style="background-color:#da5f5f;"></td>
+  </tr>
+  <tr>
+    <td class="day"><span class="number">28</span><span class="event event-multiday" style="background-color:#da5f5f;"></td>
+    <td class="day today"><span class="number">29</span><span class="event event-multiday-finish" style="background-color:#da5f5f;"></td>
+    <td class="day"><span class="number">30</span></td>
+    <td class="day"><span class="number">1</span></td>
+    <td class="day"><span class="number">2</span></td>
+    <td class="day"><span class="number">3</span></td>
+    <td class="day"><span class="number">4</span></td>
+  </tr>
+  <tr>
+    <td class="day"><span class="number">5</span></td>
+    <td class="day"><span class="number">6</span><span class="event"></span></td>
+    <td class="day"><span class="number">7</span></td>
+    <td class="day"><span class="number">8</span></td>
+    <td class="day"><span class="number">9</span></td>
+    <td class="day"><span class="number">10</span></td>
+    <td class="day"><span class="number">11</span></td>
+  </tr>
+  </table>
       <h3>Have an event to celebrate?</h3>
       <p>Book our private room today by giving us a call!</p></div>
     </section>
+
     <!--subscription section-->
     <section>
     <div class="image" data-type="background" data-speed="3"></div>
-    <div class="stuff" data-type="content"><h2>SUBSCRIPTIONS</h2>
+    <div class="stuff" data-type="content"><div class="main"><h2>SUBSCRIPTIONS</h2>
     <img src="" alt=""></div>
     </section>
+
     <!--contact us section-->
     <section>
     <div class="image" data-type="background" data-speed="3"></div>
-    <div class="stuff" data-type="content"><h2>CONTACT US</h2>
+    <div class="stuff" data-type="content"><div class="main"><h2>CONTACT US</h2>
     <p>We would love to get in touch with you! Reach out below and a member of our highly caffienated team will reach out to you shortly!</p>
-    <form class="" action="index.html" method="post"></form>
-    <img src="" alt=""></div>
+
+    <!--form section-->
+    <div class="formdiv"><div class="main">
+    <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lname">Message</label>
+    <input type="text" id="message" name="message" placeholder="Leave us a note..">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="youremail@mail.com">
+    <label for="pnumber">Phone Number</label>
+    <input type="text" id="pnumber" name="phonenumber" placeholder="(xxx) xxx-xxxx">
+    <label for="reachyou">Best Way to Reach You?</label>
+    <select id="reachyou" name="reachyou">
+      <option value="text">text</option>
+      <option value="call">call</option>
+      <option value="email">email</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+</div>
   </section>
 </div>
   </body>
