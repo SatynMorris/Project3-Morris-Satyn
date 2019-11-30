@@ -144,16 +144,17 @@
     <p>We would love to get in touch with you! Reach out below and a member of our highly caffienated team will reach out to you shortly!</p>
 
     <!--form section-->
-    <div class="formdiv"><div class="text-content">
-    <form action="/action_page.php">
+    <!--form code-->
+    <div><div class="text-content">
+      <form class="formdiv" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="req_firstname" placeholder="Your name..">
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" name="req_lastname" placeholder="Your last name..">
     <label for="lname">Message</label>
-    <input type="text" id="message" name="message" placeholder="Leave us a note..">
+    <input type="text" id="message" name="req_message" placeholder="Leave us a note..">
     <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="youremail@mail.com">
+    <input type="text" id="email" name="req_email" placeholder="youremail@mail.com">
     <label for="pnumber">Phone Number</label>
     <input type="text" id="pnumber" name="phonenumber" placeholder="(xxx) xxx-xxxx">
     <label for="reachyou">Best Way to Reach You?</label>
@@ -163,9 +164,11 @@
       <option value="email">email</option>
     </select>
     <input type="submit" value="Submit">
-  </form>
-</div>
-  </section>
+    </form>
+    </div></div>
+      <p>You are opting in to recieve emails from Toolbox for Creatives. <br>Don't worry, your information will not be shared. We value your privacy!</p>
+      <p>Photo by Steve Johnson from Pexels</p>
+    </section>
 </div>
 </main>
   </body>

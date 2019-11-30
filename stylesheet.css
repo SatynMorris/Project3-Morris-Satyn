@@ -162,7 +162,7 @@ html, body {
   width: 70%;
   overflow: scroll;
   padding-left: 20px;
-  
+
 
   section {
     width: 100%;
@@ -291,7 +291,7 @@ span.event-multiday-finish { margin-left: -4px;  }
 span.event-ghost { background-color:transparent; }
 
 
-/*form div*/
+/*form code*/
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -318,8 +318,10 @@ input[type=submit]:hover {
 }
 .formdiv {
   border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin: 20px;
+  padding-left: 20px;
+  margin: 60px;
   float: right;
+  height: 100px;
+  width: 600px;
+  margin-bottom: 300px;
 }
