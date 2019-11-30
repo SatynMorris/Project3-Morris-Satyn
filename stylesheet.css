@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #111;
+  background-color: white;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -16,27 +16,26 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #1B1355;
   display: block;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: #BC8030;
 }
+
+.navheader {
+  float:left;
+}
+
+
 
 .text-content {
    /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-}
-
-body {
-	background: #34495e;
-	color: #ecf0f1;
-	margin: 0;
-	padding: 0;
 }
 
 .banner {
@@ -145,8 +144,10 @@ a .btn {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 
 html, body {
-  background-color: #2c3e50;
+  background-image: url("nightsky.jpg");
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -304,7 +305,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #1B1355;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -314,7 +315,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #BC8030;
 }
 .formdiv {
   border-radius: 5px;
