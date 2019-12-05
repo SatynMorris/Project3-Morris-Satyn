@@ -1,7 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: : 200px;
+  padding: 100px;
+}
 .sidenav {
   height: 100vh;
-  width: 20%;
-  position: relative;
+  width: 200px;
+  position: fixed;
   float: left;
   z-index: 1;
   top: 0;
@@ -15,7 +22,7 @@
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #1B1355;
   display: block;
 }
@@ -31,7 +38,15 @@
 }
 
 
-
+.top{
+  width: 100%;
+  margin-left: 0; /* Same as the width of the sidenav */
+  padding: 0px 20px;
+  height: 800px;
+  background-image: url(../images/nightsky_top.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+}
 .text-content {
    /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
@@ -50,7 +65,7 @@
 	width: 100%;
 	height: auto;
 	padding: 30px;
-
+  color: white;
 	/*centers it in the .banner*/
 	position: absolute;
 	top: 50%;
@@ -62,14 +77,10 @@
 	transform: translate(-50%,-50%);
 }
 
+}
 .typed_wrap h1 {
 	display: inline;
-}
-.top{
-  width: 100%;
-  margin-left: 180px; /* Same as the width of the sidenav */
-  padding: 0px 20px;
-  height: 1000px;
+  color: white;
 }
 
 /*Add custom cursor so it auto inherits font styles*/
@@ -79,6 +90,7 @@
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
+  color: white;
 }
 
 /*Removes cursor that comes with typed.js*/
@@ -135,20 +147,158 @@ a .btn {
 	background: #ecf0f1;
 	color: #34495e;
 }
+/*our story*/
+
+.our-story {
+  background: white;
+  padding: 50px;
+  margin: 20px 20px 0 0;
+}
+
+.story-image {
+    float: left;
+    display: block;
+}
+.story-thumb img {
+    display: block
+}
+.story-content {
+    margin-left: 210px
+}
+.story-title {
+    font-weight: bold;
+    font-size: 200%
+}
+
+.locations {
+  background: #f2f2f2;
+}
+
+.locationdivleft {
+  float: left;
+}
+.locationdivright {
+  float: right;
+}
+
+.hours {
+  background-image: url(../images/nightsky_middle.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  color: white;
+}
+/*subscription code*/
+/* Items: horizontal flex
+   ======================
+*/
+.subscriptions {
+background-color: #bc8030;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-basis: calc(33.3% - (2em/3));
+  margin-bottom: 1em;
+}
 
 
-/*parallax coding*/
+/* Item: vertical flex
+   ===================
+*/
 
-@import "compass/css3";
+.item {
+  display: flex;
+  flex-direction: column;
+}
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+.item__image {
+  flex-basis: 10em;
+}
 
-html, body {
-  background-image: url("nightsky.jpg");
-  font-family: 'Open Sans', sans-serif;
+.item__heading {
+  flex-basis: 5em;
+}
+
+/* Item heading: vertical flex
+   ===========================
+*/
+
+.item__heading,
+.item__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Item image: do not overflow
+   ===========================
+*/
+
+.item__image {
+  overflow: hidden;
+}
+
+
+/* Not so important CSS - base styles:
+   ===================================
+*/
+
+body {
+  margin: 2rem;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+h2,
+p {
   margin: 0;
   padding: 0;
 }
+
+
+
+.item__heading {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.meta {
+  margin-bottom: 3rem;
+}
+
+.meta p {
+  margin-bottom: .5rem;
+}
+
+/*subscripion code ends*/
+
+.table{
+  max-width: 50%;
+}
+
+.brews {
+   display: inline-block;
+   padding: 25 px;
+   white-space: nowrap;
+}
+.contact {
+  background-image: url(../images/nightsky_bottom.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  color: white;
+}
+
+
+
+/*parallax coding
 
 .container {
   align-content: center;
@@ -262,11 +412,6 @@ a {
   text-decoration: none;
 }
 
-/*body class styles*/
-
-.locationdiv {
-  float: right;
-}
 
 /*calender div*/
 table { width: 100%; box-sizing: border-box; box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1); float:right; /*border-collapse: collapse;*/ border-spacing: 0; background-color: #333333; }
