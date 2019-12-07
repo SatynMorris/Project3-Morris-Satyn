@@ -1,7 +1,7 @@
 <header>
   <nav>
     <ul>
-      <li><a href="index.html">Return to Sign Up</a></li>
+      <li><a href="index.html">Return to Nite Owl</a></li>
     </ul>
   </nav>
 </header>

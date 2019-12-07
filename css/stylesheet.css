@@ -5,6 +5,7 @@ html, body {
   margin-left: : 200px;
   padding: 100px;
 }
+
 .sidenav {
   height: 100vh;
   width: 200px;
@@ -28,7 +29,7 @@ html, body {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #BC8030;
   text-decoration: underline;
   text-decoration-color: #BC8030;
 }
@@ -37,6 +38,11 @@ html, body {
   float:left;
 }
 
+.copyright {
+  font-size: 12px;
+  padding: 50px 8px 6px 16px;
+
+}
 
 .top{
   width: 100%;
@@ -45,14 +51,17 @@ html, body {
   height: 800px;
   background-image: url(../images/nightsky_top.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 100%;
+
 }
+
 .text-content {
    /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
-
+/* code left from animation
 .banner {
 	display: block;
 	min-height: 200px;
@@ -66,7 +75,7 @@ html, body {
 	height: auto;
 	padding: 30px;
   color: white;
-	/*centers it in the .banner*/
+	centers it in the .banner
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -83,7 +92,7 @@ html, body {
   color: white;
 }
 
-/*Add custom cursor so it auto inherits font styles*/
+Add custom cursor so it auto inherits font styles
 .typed::after {
 	content: '|';
 	display: inline;
@@ -93,12 +102,12 @@ html, body {
   color: white;
 }
 
-/*Removes cursor that comes with typed.js*/
+Removes cursor that comes with typed.js
 .typed-cursor{
    opacity: 0;
 	display: none;
 }
-/*Custom cursor animation*/
+Custom cursor animation
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -114,7 +123,7 @@ html, body {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
+*/
 .btns {
 	display: block;
 	width: 400px;
@@ -157,10 +166,10 @@ a .btn {
 
 .story-image {
     float: left;
-    display: block;
+    display: inline-block;
 }
 .story-thumb img {
-    display: block
+    display: inline-block;
 }
 .story-content {
     margin-left: 210px
@@ -184,6 +193,7 @@ a .btn {
 .hours {
   background-image: url(../images/nightsky_middle.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 100%;
   color: white;
 }
@@ -292,6 +302,7 @@ p {
 .contact {
   background-image: url(../images/nightsky_bottom.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 100%;
   color: white;
 }
@@ -354,4 +365,5 @@ input[type=submit]:hover {
   height: 100px;
   width: 600px;
   margin-bottom: 300px;
+  background: transparent;
 }
